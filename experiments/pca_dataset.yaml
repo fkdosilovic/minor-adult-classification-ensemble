@@ -1,0 +1,22 @@
+# Dataset info.
+train_dataset: utkfaces_train_dataset.npy
+train_labels: utkfaces_train_labels.npy
+test_dataset: utkfaces_test_dataset.npy
+test_labels: utkfaces_test_labels.npy
+train_size: 16530
+test_size: 7087
+
+# Image transformation info.
+grayscale: false
+size: 32
+
+# PCA.
+variance: 0.99
+
+# Model data.
+
+# The first {} is reserved for img size, while the second is reserved for
+# number of components found by PCA.
+model_name: "pca_{}_{}.npy"
+train_dataset_name: "utkfaces_train_pca_{}_{}_dataset.npy"
+test_dataset_name: "utkfaces_test_pca_{}_{}_dataset.npy"

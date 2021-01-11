@@ -1,0 +1,25 @@
+# Dataset info.
+train_dataset: utkfaces_train_pca_32_379_dataset.npy
+train_labels: utkfaces_train_labels.npy
+test_dataset: utkfaces_test_pca_32_379_dataset.npy
+test_labels: utkfaces_test_labels.npy
+
+train_size: 16530
+test_size: 7087
+features: 379
+
+# MLP params.
+hidden_layers: [32, 32] # Input layer and output layer are automatically computed.
+activation: "relu"
+alpha: 0.001
+batch_size: 128
+max_iter: 2000
+
+# Bagging parameters.
+n_estimators: 40
+max_samples: 0.7
+max_features: 0.9
+
+# Misc.
+model_name: "balanced_bagging_mlp_32x32_a.jl"
+n_jobs: 6
