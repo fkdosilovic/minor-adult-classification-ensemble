@@ -71,3 +71,10 @@ Parameters for `main.py` script are:
 - **--image-size** - an image size for the PCA, default value (32) is provided
 - **--video-file** - a video file
 - **--blur** - whether to blur the faces of minors or not, default value ("yes") is provided (other option is "no")
+
+Examples:
+
+```bash
+python src/main.py --video-file=<absolute-path-to-video-file>
+python src/main.py --video-file=<absolute-path-to-video-file> --pca-model=pca_48x48.npy --model=adasyn_bagging_mlp_48x48_b.jl --image-size=48
+```
