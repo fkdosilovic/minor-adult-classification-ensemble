@@ -25,11 +25,13 @@ conda create --name <env> --file requirements.txt
 pip install -r requirements.txt
 ```
 
-
 ## Running the experiments
 
 For all experiments we recommend that you are positioned in the root of the
 project directory.
+
+**--> Note:** To run the experiments create **data** folder with the required npy data files.
+
 
 ### Hyperparameter search
 
