@@ -1,0 +1,21 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+imbalanced-learn=0.7.0
+intel-openmp
+joblib=1.0.0
+libblas=3.9.0
+libcblas=3.9.0
+libopenblas=0.3.12
+libopencv=4.5.0
+matplotlib=3.3.3
+matplotlib-base=3.3.3
+mkl
+numpy=1.19.4
+opencv=4.5.0
+pillow=8.0.1
+py-opencv=4.5.0
+pyyaml=5.3.1
+scikit-image=0.17.2
+scikit-learn=0.24.0
+scipy=1.5.3
