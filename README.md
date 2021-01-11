@@ -56,7 +56,7 @@ python src/<train-test-script>.py <train-test-yaml>.yaml
 for example
 
 ```bash
-python src/balanced_bagging_mlp_train_test.py balanced_bagging_mlp_train_test.yaml
+python src/balanced_bagging_mlp_train_test.py balanced_bagging_mlp_train_test_32x32_a.yaml
 ```
 
 ### Main script for inference on video files

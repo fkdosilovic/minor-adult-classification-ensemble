@@ -1,0 +1,26 @@
+# Dataset info.
+train_dataset: utkfaces_train_pca_32_379_dataset.npy
+train_labels: utkfaces_train_labels.npy
+
+train_size: 16530
+features: 379
+
+# ADASYN parameters.
+n_neighbors: [5, 10, 20, 50, 100, 250, 500s]
+
+# MLP params.
+hidden_layers:
+  [[32, 32], [32, 32, 32], [48, 48], [48, 48, 48], [64, 64], [64, 64, 64]]
+activation: "relu"
+alpha: [0.001, 0.01, 0.1]
+batch_size: 128
+max_iter: 2000
+
+# Bagging parameters.
+n_estimators: [30, 40, 50]
+max_samples: [0.6, 0.7, 0.8]
+max_features: [0.7, 0.8, 0.9]
+
+# Misc.
+n_jobs: 6 # For ADASYN and Bagging.
+n_configs: 60

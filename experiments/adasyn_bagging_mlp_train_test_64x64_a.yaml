@@ -1,0 +1,28 @@
+# Dataset info.
+train_dataset: utkfaces_train_pca_64_769_dataset.npy
+train_labels: utkfaces_train_labels.npy
+test_dataset: utkfaces_test_pca_64_769_dataset.npy
+test_labels: utkfaces_test_labels.npy
+
+train_size: 16530
+test_size: 7087
+features: 769
+
+# ADASYN parameters.
+n_neighbors: 100
+
+# MLP params.
+hidden_layers: [64, 64] # Input layer and output layer are automatically computed.
+activation: "relu"
+alpha: 0.001
+batch_size: 128
+max_iter: 2000
+
+# Bagging parameters.
+n_estimators: 50
+max_samples: 0.8
+max_features: 0.7
+
+# Misc.
+model_name: "adasyn-bagging-mlp-64-a.jl"
+n_jobs: 6 # For ADASYN and Bagging.
