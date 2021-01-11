@@ -47,10 +47,9 @@ def stdout_experiment_setup(setup):
 def extract_faces_from_image(image, boxes):
     faces = []
     for (top, right, bottom, left) in boxes:
-        width, height = right - left, bottom - top
-        print(width, height)
+        # width, height = right - left, bottom - top
         # assert width > 0 and height > 0
-        faces.append(image[top : top + height, left : left + width])
+        faces.append(image[top:bottom, left:right])
     return faces
 
 
@@ -68,6 +67,25 @@ def label_image(image, boxes, labels):
             (0, 255, 0),
             2,
         )
+
+
+# Taken from https://www.pyimagesearch.com/2020/04/06/blur-and-anonymize-faces-with-opencv-and-python/.
+def blur_image(image, boxes, labels, factor=3.0):
+    for ((top, right, bottom, left), label) in zip(boxes, labels):
+        if label == 0:
+            face_image = image[top:bottom, left:right]
+            w, h = right - left, bottom - top
+            (h, w) = face_image.shape[:2]
+            kW = int(w / factor)
+            kH = int(h / factor)
+
+            kW -= int(kW % 2 == 0)
+            kH -= int(kH % 2 == 0)
+
+            blurred = cv2.GaussianBlur(face_image, (kW, kH), 0)
+            image[top:bottom, left:right] = blurred
+
+    return image
 
 
 def read_and_prepare_dataset(
