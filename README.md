@@ -6,7 +6,7 @@ Zagreb) project.
 
 **Update:** The project title that was chosen at the start the semester was *Real-time de-identification of minors*.
 I've decided to leave that title in the final project report even though we did not get close to *real-time*
-adulthood classification, but decided to rename the repository.
+adulthood classification, but decided to rename the repository into a more realistic name.
 
 Team members:
 1. Filip Karlo Došilović
