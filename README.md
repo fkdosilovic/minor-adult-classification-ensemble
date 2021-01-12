@@ -4,6 +4,10 @@ This repository contains source code, experiments and examples for the [Neural
 Networks](https://www.fer.unizg.hr/en/course/neunet_a) course (Faculty of Electrical Engineering and Computing, University of
 Zagreb) project.
 
+**Update:** The project title that was chosen at the start the semester was *Real-time de-identification of minors*.
+I've decided to leave that title in the final project report even though we did not get close to *real-time*
+adulthood classification, but decided to rename the repository.
+
 Team members:
 1. Filip Karlo Došilović
 2. Antonio Gauta
