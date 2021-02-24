@@ -1,5 +1,7 @@
 # Minor/adult classification from face images using an ensemble of shallow multilayer perceptrons
 
+**Project report** is available [here](Real-Time-De-Identification-of-Minors-Project-Report.pdf).
+
 This repository contains source code, experiments and examples for the [Neural
 Networks](https://www.fer.unizg.hr/en/course/neunet_a) course (Faculty of Electrical Engineering and Computing, University of
 Zagreb) project.
